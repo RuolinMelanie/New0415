@@ -98,23 +98,26 @@
     </div>
   </section>
 
+
   <!-- Section 8: Contact Form -->
-  <section class="bg-gray-50 py-12 px-6 max-w-2xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4">Let’s work together</h2>
-    <p class="mb-6">Leave your information and we’ll get in touch with you shortly!</p>
-    <form action="https://formspree.io/f/movebkzl" method="POST">
-      <label for="name">Name</label><br>
-      <input type="text" name="name" required><br><br>
+<section class="bg-gray-50 py-12 px-6 max-w-2xl mx-auto">
+  <h2 class="text-2xl font-semibold mb-4">Let’s work together</h2>
+  <p class="mb-6">Leave your information and we’ll get in touch with you shortly!</p>
+  <form action="https://formspree.io/f/movebkzl" method="POST">
     
-      <label for="business">Business</label><br>
-      <input type="text" name="business" required><br><br>
-    
-      <label for="message">Message</label><br>
-      <textarea name="message" required></textarea><br><br>
-    
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <label for="name_business">Name / Business</label><br>
+    <input type="text" name="name_business" id="name_business" required><br><br>
+
+    <label for="contact_info">Contact Info (email / phone number)</label><br>
+    <input type="text" name="contact_info" id="contact_info" required><br><br>
+
+    <label for="message">Message</label><br>
+    <textarea name="message" id="message" required></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
 
 </body>
 </html>
