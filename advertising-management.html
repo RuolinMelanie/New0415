@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RU. - Advertising Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+    .highlight-first-line::first-line {
+      font-weight: 700;
+      font-size: 1.2em;
+      color: #1a202c;
+    }
+    .content-section {
+      transition: all 0.3s ease;
+    }
+    .content-section:hover {
+      transform: translateY(-5px);
+    }
+    .image-container {
+      overflow: hidden;
+      border-radius: 1rem;
+    }
+    .image-container img {
+      transition: transform 0.5s ease;
+    }
+    .image-container:hover img {
+      transform: scale(1.03);
+    }
+    .section-title {
+      position: relative;
+      display: inline-block;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #f97316, #f59e0b);
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease;
+    }
+    .content-section:hover .section-title::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    .ad-card {
+      position: relative;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .ad-card-content {
+      position: relative;
+      z-index: 10;
+    }
+    .ad-card-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.15;
+      transition: opacity 0.3s ease;
+    }
+    .ad-card:hover .ad-card-image {
+      opacity: 0.25;
+    }
+    /* 已移除emoji相关样式 */
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Section 1: Logo -->
+  <section class="flex justify-center items-center bg-teal-50 py-8">
+    <a href="index.html">
+      <img src="logo带slogan 居中.png" alt="RU. Logo" class="w-36 h-auto">
+    </a>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-4 bg-white">
+    <p class="text-sm uppercase tracking-widest text-gray-500">
+      our approach to
+    </p>
+    <h1 class="text-5xl font-bold mt-4 text-gray-900 leading-tight">
+      Advertising Management
+    </h1>
+    <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+      Xiaohongshu Advertising Management: Precision Across Search & Feed
+    </p>
+    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+      Xiaohongshu offers a well-established advertising ecosystem that mirrors the two primary consumer touchpoints on the platform.
+    </p>
+  </section>
+
+  <!-- Ad Types Section - Side by Side -->
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- In-Feed Ads Card -->
+      <div class="ad-card bg-gray-900 text-white p-8 shadow-xl content-section">
+        <img src="images/in-feed.jpg" alt="In-Feed Ads" class="ad-card-image">
+        <div class="ad-card-content">
+          <h2 class="text-3xl font-semibold mb-6 border-l-4 border-orange-400 pl-4 section-title">
+            In-Feed Ads
+          </h2>
+          <h3 class="text-xl font-bold mb-4 text-orange-300">Browsing-Based</h3>
+          <p class="text-lg leading-relaxed mb-6">
+            Delivered through opening screens and native content feeds, these ads are designed to amplify brand/product awareness, establish mental availability, and drive higher click-through rates (CTR) by seamlessly integrating into the user's browsing experience.
+          </p>
+          <div class="mt-6 flex items-center">
+            <div class="w-12 h-1 bg-orange-400 mr-4"></div>
+            <p class="text-orange-300 font-semibold">Building Interest</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Search Ads Card -->
+      <div class="ad-card bg-gray-900 text-white p-8 shadow-xl content-section">
+        <img src="images/search.jpg" alt="Search Ads" class="ad-card-image">
+        <div class="ad-card-content">
+          <h2 class="text-3xl font-semibold mb-6 border-l-4 border-teal-400 pl-4 section-title">
+            Search Ads
+          </h2>
+          <h3 class="text-xl font-bold mb-4 text-teal-300">Intent-Based</h3>
+          <p class="text-lg leading-relaxed mb-6">
+            Placed within search results and high-intent interaction scenarios, search ads are optimized to intercept decision-making moments, capture demand, and outcompete rival brands at the most critical stage of user intent.
+          </p>
+          <div class="mt-6 flex items-center">
+            <div class="w-12 h-1 bg-teal-400 mr-4"></div>
+            <p class="text-teal-300 font-semibold">Capturing Interest</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Synergy Description -->
+    <div class="mt-12 text-center max-w-3xl mx-auto">
+      <p class="text-lg text-gray-700 italic">
+        Together, these two formats form a complementary advertising matrix—one builds interest, the other captures it. Their synergy enables brands to fulfill distinct yet connected marketing objectives across the full user journey.
+      </p>
+    </div>
+  </section>
+
+  <!-- RU's Approach Section -->
+  <section class="py-16 px-6 max-w-5xl mx-auto bg-gray-50 rounded-3xl content-section">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-semibold text-gray-900 mb-6 border-l-4 border-teal-400 pl-4 section-title">
+          RU.'s Approach
+        </h2>
+        <p class="text-xl font-bold text-gray-800 mb-4">
+          Strategic Precision with Continuous Optimization
+        </p>
+        <p class="text-lg leading-relaxed mb-6">
+          At RU., we believe performance follows clarity. That's why every campaign begins with a clearly defined objective—be it awareness, conversion, or competitive blocking.
+        </p>
+        <p class="text-lg leading-relaxed">
+          From there, we tailor each ad strategy using:
+        </p>
+        <ul class="list-disc ml-6 space-y-2 text-lg text-gray-700 mt-4 mb-6">
+          <li>The most relevant ad formats and placements</li>
+          <li>Creative assets aligned with platform-native behavior</li>
+          <li>Keyword strategy grounded in audience insight</li>
+        </ul>
+        <p class="text-lg leading-relaxed">
+          Our team manages every aspect of campaign delivery—from planning and launch to real-time tracking, data interpretation, and continuous optimization. We treat advertising not as a one-off media spend, but as a precision tool for long-term brand growth.
+        </p>
+      </div>
+      <div class="image-container shadow-lg">
+        <img src="images/ad-plan.jpg" alt="Advertising Planning" class="w-full h-auto rounded-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 px-6 max-w-4xl mx-auto text-center bg-white my-16">
+    <h2 class="text-3xl font-semibold mb-6">Ready to optimize your advertising strategy?</h2>
+    <p class="text-lg mb-8">Let's create precision-targeted campaigns that drive measurable results for your brand.</p>
+    <a href="index.html#contact" class="inline-block bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-full font-semibold transition transform hover:scale-105 shadow-lg">
+      Let's Talk
+    </a>
+  </section>
+
+  <!-- Back to Services -->
+  <section class="text-center py-8 mb-16">
+    <a href="index.html#services" class="inline-flex items-center text-teal-600 hover:text-teal-800 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+      </svg>
+      Back to All Services
+    </a>
+  </section>
+
+</body>
+</html>
+<!-- Footer -->
+<footer class="bg-gray-100 mt-16">
+  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between text-center md:text-left text-gray-600 text-sm">
+    <div class="mb-4 md:mb-0">
+      &copy; 2025 RU. All rights reserved.
+    </div>
+    <div class="flex space-x-4">
+      <a href="privacy.html" class="hover:text-gray-900 transition">Privacy Policy</a>
+      <a href="terms.html" class="hover:text-gray-900 transition">Terms of Service</a>
+      <a href="index.html#contact" class="hover:text-gray-900 transition">Contact</a>
+    </div>
+  </div>
+</footer>
