@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RU. - Strategic Content</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+    .highlight-first-line::first-line {
+      font-weight: 700;
+      font-size: 1.2em;
+      color: #1a202c;
+    }
+    .content-section {
+      transition: all 0.3s ease;
+    }
+    .content-section:hover {
+      transform: translateY(-5px);
+    }
+    .image-container {
+      overflow: hidden;
+      border-radius: 1rem;
+    }
+    .image-container img {
+      transition: transform 0.5s ease;
+    }
+    .image-container:hover img {
+      transform: scale(1.03);
+    }
+    .section-title {
+      position: relative;
+      display: inline-block;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #f97316, #f59e0b);
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease;
+    }
+    .content-section:hover .section-title::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Section 1: Logo -->
+  <section class="flex justify-center items-center bg-teal-50 py-8">
+    <a href="index.html">
+      <img src="logo带slogan 居中.png" alt="RU. Logo" class="w-36 h-auto">
+    </a>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-4 bg-white">
+    <p class="text-sm uppercase tracking-widest text-gray-500">
+      our approach to
+    </p>
+    <h1 class="text-5xl font-bold mt-4 text-gray-900 leading-tight">
+      Strategic Content
+    </h1>
+    <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+      We believe that truly great content leaves a lasting impression.
+      Rather than being loud, we focus on making every word resonate with impact.
+    </p>
+  </section>
+
+  <!-- Content Section 1 -->
+  <section class="py-16 px-6 max-w-5xl mx-auto content-section">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="image-container shadow-lg">
+        <img src="content-core.jpg" alt="Content Core" class="w-full h-auto rounded-2xl">
+      </div>
+      <div>
+        <h2 class="text-3xl font-semibold text-gray-900 mb-6 border-l-4 border-teal-400 pl-4 section-title">
+          The Core of Xiaohongshu Content
+        </h2>
+        <p class="text-lg leading-relaxed highlight-first-line">
+          <strong class="text-xl">Authenticity that Builds Trust, Native Content that Drives UGC</strong><br><br>
+          At the heart of Xiaohongshu lies the power of authentic user experiences. The platform thrives on personal, relatable stories shared by users, where interest is sparked not by ads, but by trust. This organic process forms the foundation of Xiaohongshu's unique "Seedology" ecosystem.
+        </p>
+        <p class="text-lg leading-relaxed mt-4">
+          At RU., our content strategy is rooted in this philosophy. We craft visually native and emotionally resonant content that not only captures attention but encourages meaningful user interaction. Our goal is not simply to speak for your brand—but to inspire users to speak for you, turning content into conversations and engagement into advocacy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section 2 -->
+  <section class="py-16 px-6 max-w-5xl mx-auto bg-gray-50 content-section">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="md:order-2 image-container shadow-lg">
+        <img src="brand-community.jpg" alt="Brand Marketing" class="w-full h-auto rounded-2xl">
+      </div>
+      <div class="md:order-1">
+        <h2 class="text-3xl font-semibold text-gray-900 mb-6 border-l-4 border-teal-400 pl-4 section-title">
+          Brand Marketing on Xiaohongshu
+        </h2>
+        <p class="text-lg leading-relaxed highlight-first-line">
+          <strong class="text-xl">Lifestyle Integration and Emotional Resonance</strong><br><br>
+          Unlike traditional top-down messaging, Xiaohongshu favors brands that show up as people—not logos—solving real-life needs within genuine lifestyle scenarios.
+        </p>
+        <p class="text-lg leading-relaxed mt-4">
+          Our brand strategy at RU. is to translate the cultural essence of Nordic brands into everyday moments that resonate with Xiaohongshu users. Therefore, rather than simply translating, our storytelling strategy is a thoughtful reinterpretation—adapting brand narratives to resonate deeply with the target culture. We build Human-to-Human (H2H) connections that evoke empathy, helping your brand become part of your audience's lived experiences—not just their feed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section 3 -->
+  <section class="py-16 px-6 max-w-5xl mx-auto content-section">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="image-container shadow-lg">
+        <img src="community.jpg" alt="Community" class="w-full h-auto rounded-2xl">
+      </div>
+      <div>
+        <h2 class="text-3xl font-semibold text-gray-900 mb-6 border-l-4 border-teal-400 pl-4 section-title">
+          Xiaohongshu's Community Atmosphere
+        </h2>
+        <p class="text-lg leading-relaxed highlight-first-line">
+          <strong class="text-xl">High-Stickiness, Interest-Driven Micro-Communities</strong><br><br>
+          Xiaohongshu's unique reverse-funnel distribution model empowers interest-based users—not influencers—to lead conversations. This results in tightly-knit communities where people engage not out of obligation, but from genuine curiosity and shared lifestyle passions.
+        </p>
+        <p class="text-lg leading-relaxed mt-4">
+          At RU., we leverage platform tools and data to develop custom community growth strategies for each client. But more importantly, we believe in using data without being driven by it. Our goal is to build emotional resonance on top of rational insights, because strong communities aren't built by numbers—they're built by trust.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 px-6 max-w-4xl mx-auto text-center bg-gray-50 rounded-3xl my-16">
+    <h2 class="text-3xl font-semibold mb-6">Ready to elevate your content strategy?</h2>
+    <p class="text-lg mb-8">Let's create authentic, resonant content that builds lasting connections with your audience.</p>
+    <a href="index.html#contact" class="inline-block bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-full font-semibold transition transform hover:scale-105">
+      Let's Talk
+    </a>
+  </section>
+
+  <!-- Back to Services -->
+  <section class="text-center py-8 mb-16">
+    <a href="index.html#services" class="inline-flex items-center text-teal-600 hover:text-teal-800 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+      </svg>
+      Back to All Services
+    </a>
+  </section>
+
+</body>
+</html>
+<!-- Footer -->
+<footer class="bg-gray-100 mt-16">
+  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between text-center md:text-left text-gray-600 text-sm">
+    <div class="mb-4 md:mb-0">
+      &copy; 2025 RU. All rights reserved.
+    </div>
+    <div class="flex space-x-4">
+      <a href="#" class="hover:text-gray-900 transition">Privacy Policy</a>
+      <a href="#" class="hover:text-gray-900 transition">Terms of Service</a>
+      <a href="index.html#contact" class="hover:text-gray-900 transition">Contact</a>
+    </div>
+  </div>
+</footer>
