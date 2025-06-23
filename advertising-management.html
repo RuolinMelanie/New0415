@@ -101,20 +101,22 @@
   </section>
 
   
+
 <!-- Ad Types Section - Side by Side -->
 <section class="py-16 px-6 max-w-6xl mx-auto">
   <div class="grid md:grid-cols-2 gap-8">
     <!-- In-Feed Ads Card -->
     <div
-      class="ad-card bg-gray-900 text-white p-8 shadow-xl content-section"
-      style="background-image: url('images/in-feed.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-blend-mode: multiply;"
+      class="ad-card text-white p-8 shadow-xl content-section relative"
+      style="background-image: url('images/in-feed.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
     >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       <div class="ad-card-content relative z-10">
         <h2 class="text-3xl font-semibold mb-6 border-l-4 border-orange-400 pl-4 section-title">
           In-Feed Ads
         </h2>
         <h3 class="text-xl font-bold mb-4 text-orange-300">Browsing-Based</h3>
-        <p class="text-lg leading-relaxed mb-6">
+        <p class="text-lg leading-relaxed mb-6 text-white">
           Delivered through opening screens and native content feeds, these ads are designed to amplify brand/product awareness, establish mental availability, and drive higher click-through rates (CTR) by seamlessly integrating into the user's browsing experience.
         </p>
         <div class="mt-6 flex items-center">
@@ -126,15 +128,16 @@
 
     <!-- Search Ads Card -->
     <div
-      class="ad-card bg-gray-900 text-white p-8 shadow-xl content-section"
-      style="background-image: url('images/search.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-blend-mode: multiply;"
+      class="ad-card text-white p-8 shadow-xl content-section relative"
+      style="background-image: url('images/search.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
     >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       <div class="ad-card-content relative z-10">
         <h2 class="text-3xl font-semibold mb-6 border-l-4 border-teal-400 pl-4 section-title">
           Search Ads
         </h2>
         <h3 class="text-xl font-bold mb-4 text-teal-300">Intent-Based</h3>
-        <p class="text-lg leading-relaxed mb-6">
+        <p class="text-lg leading-relaxed mb-6 text-white">
           Placed within search results and high-intent interaction scenarios, search ads are optimized to intercept decision-making moments, capture demand, and outcompete rival brands at the most critical stage of user intent.
         </p>
         <div class="mt-6 flex items-center">
