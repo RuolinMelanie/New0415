@@ -72,7 +72,27 @@
     .ad-card:hover .ad-card-image {
       opacity: 0.25;
     }
-    /* 已移除emoji相关样式 */
+    
+    /* 修复方案：添加备选背景和错误处理 */
+    .in-feed-card {
+      background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('images/in-feed.jpg'),
+        linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .search-card {
+      background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('images/search.jpg'),
+        linear-gradient(135deg, #1a202c 0%, #0d9488 100%);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -100,16 +120,11 @@
     </p>
   </section>
 
-  
-
-<!-- Ad Types Section - Side by Side -->
+<!-- Ad Types Section - Side by Side (修复版本) -->
 <section class="py-16 px-6 max-w-6xl mx-auto">
   <div class="grid md:grid-cols-2 gap-8">
-    <!-- In-Feed Ads Card -->
-    <div
-      class="ad-card text-white p-8 shadow-xl content-section relative"
-      style="background-image: url('images/in-feed.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
-    >
+    <!-- In-Feed Ads Card (修复版本) -->
+    <div class="ad-card in-feed-card text-white p-8 shadow-xl content-section relative">
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       <div class="ad-card-content relative z-10">
         <h2 class="text-3xl font-semibold mb-6 border-l-4 border-orange-400 pl-4 section-title">
@@ -126,11 +141,8 @@
       </div>
     </div>
 
-    <!-- Search Ads Card -->
-    <div
-      class="ad-card text-white p-8 shadow-xl content-section relative"
-      style="background-image: url('images/search.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
-    >
+    <!-- Search Ads Card (修复版本) -->
+    <div class="ad-card search-card text-white p-8 shadow-xl content-section relative">
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       <div class="ad-card-content relative z-10">
         <h2 class="text-3xl font-semibold mb-6 border-l-4 border-teal-400 pl-4 section-title">
@@ -155,7 +167,6 @@
     </p>
   </div>
 </section>
-
 
   <!-- RU's Approach Section -->
   <section class="py-16 px-6 max-w-5xl mx-auto bg-gray-50 rounded-3xl content-section">
@@ -222,3 +233,4 @@
     </div>
   </div>
 </footer>
+
